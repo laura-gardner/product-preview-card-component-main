@@ -19,12 +19,17 @@ body {
     margin-top: 2rem;
 }
 
-.product-image {
+.product-image-mob {
+    display: block;
     max-width: 100%;
     border-radius: 1rem 1rem 0rem 0rem;
 }
 
-.product-text {
+.product-image-desk {
+    display: none;
+}
+
+.text-div {
     padding: 0.5rem 2rem 2rem 2rem;
 }
 
@@ -96,4 +101,45 @@ body {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* Desktop styles */
+
+@media (min-width: 1440px) {
+        
+    .product-card {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image-div {
+        width: 50%;
+    }
+
+    .text-div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .product-image-desk {
+        display: block;
+        max-width: 100%;
+        border-radius: 1rem 0rem 0rem 1rem;
+    }
+    
+    .product-image-mob {
+        display: none;
+    }
+
+
+    
+
 }
